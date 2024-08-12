@@ -8,13 +8,13 @@ Waybar:
 <details>
   <summary>🌻 Gruvbox Theme</summary>
   Waybar:
-  <img src="image-1.png"/>
+  <img src="assets/image-1.png"/>
   Kitty:
-  <img src="image-2.png"/>
+  <img src="assets/image-2.png"/>
   Dolphin:
-  <img src="image-4.png"/>
+  <img src="assets/image-4.png"/>
   Fuzzel:
-  <img src="vlcsnap-2024-07-28-01h15m34s694.png"/>
+  <img src="assets/vlcsnap-2024-07-28-01h15m34s694.png"/>
 </details>
 Currently, there are configs for:
 
