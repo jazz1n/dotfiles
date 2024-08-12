@@ -2,9 +2,8 @@
 
 #### [This repo is in construction 🛠️.]
 
-My Gruvbox themed rice:
 
-Waybar:
+
 <details>
   <summary>🌻 Gruvbox Theme</summary>
   Waybar:
@@ -16,6 +15,7 @@ Waybar:
   Fuzzel:
   <img src="assets/vlcsnap-2024-07-28-01h15m34s694.png"/>
 </details>
+<br/>
 Currently, there are configs for:
 
 
