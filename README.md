@@ -3,12 +3,14 @@ Update Readme
   <img src="assets/bladerunnerss.png" alt="perfect-ss" style="width: 100%;">
 </p>
 
-> 01:01:01 ; Now if that's not a perfect screenshot I don't know what is :D
+> 01:01:01; Now if that's not a perfect screenshot I don't know what is :D
 
 #### [in construction 🛠️.]
 
 ## 🌌 Overview
-This repo is where I keep all my rice, i.e. customized configuration for various apps + my wallpapers. I have two main themes (cyberpunk && Gruvbox), and since I wanted to keep both, I have saved each config with their respective theme name. Maybe I should've branched out but I didn't lol.
+This repo is where I keep all my rice, i.e. customized configuration for various apps + my wallpapers. I have two main themes (CyberPunk && Gruvbox), and since I wanted to keep both, I have saved each config with their respective theme name. Maybe I should've branched out but I didn't lol.
+
+This is mostly a place for me to docment what I learn and I have no idea where it will go. However, I hope it can be helpful to others too and give you ideas to where you wanna go with it. I have also credited the codes that I have used at the end of this page.
 
 Anyways, thanks for looking up my repo ;)
 
@@ -70,7 +72,7 @@ Anyways, thanks for looking up my repo ;)
 | Terminal 📳       | [kitty](https://github.com/kovidgoyal/kitty)        |
 | Shell 🐚          | [fish](https://github.com/fish-shell/fish-shell) / [theme](https://github.com/IlanCosman/tide) |
 | GUI File Manager 🗃️ | [Dolphin](https://github.com/KDE/dolphin)  |
-| Wallpaper Setter 🖌️ |  [hyprpaper]() / [swww]() / [waypaper GUI]()   |
+| Wallpaper Setter 🖌️ |  [hyprpaper](https://github.com/hyprwm/hyprpaper) / [swww](https://github.com/LGFae/swww) / [waypaper GUI](https://github.com/anufrievroman/waypaper)   |
 | Fetch 🖼️          | [fastfetch](https://github.com/fastfetch-cli/fastfetch) |
 | Bar 📊            | [waybar](https://github.com/Alexays/Waybar)      |
 | Launcher 🚀       | [fuzzel](https://codeberg.org/dnkl/fuzzel)          |
@@ -110,15 +112,17 @@ Anyways, thanks for looking up my repo ;)
 - [ ] swaync / dunst
 - [ ] hypridle
 - [ ] sddm
-- [ ] vim/neovim
+- [ ] vim / neovim
 - [ ] zathura
 - [ ] ranger
 - [ ] emacs
 
 ## 📝 Credits
 
-- **Spelljinxer** - used their readme doc! : [dotfiles](https://github.com/Spelljinxer/dotfiles).
-- waypaper config
-- hyprlcok config
-- fuzzel config
-- fastfetch config
+I have borrowed code from these rops and changed some or most of them to my liking:
+
+- **Spelljinxer** - readme doc! : [dotfiles](https://github.com/Spelljinxer/dotfiles).
+- **Morhetz** - waybar config: [gruvbox](https://github.com/morhetz/gruvbox).
+- **Catppuccin** - hyprlcok config: [hyprlock](https://github.com/catppuccin/hyprlock)
+- **Dracula** - fuzzel config: [Darcula](https://draculatheme.com/fuzzel)
+- **ALEX5402** - fastfetch config:[dotfiles](https://github.com/ALEX5402/dotfiles)
