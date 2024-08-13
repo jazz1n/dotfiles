@@ -118,3 +118,7 @@ Anyways, thanks for looking up my repo ;)
 ## 📝 Credits
 
 - **Spelljinxer** - used their readme doc! : [dotfiles](https://github.com/Spelljinxer/dotfiles).
+- waypaper config
+- hyprlcok config
+- fuzzel config
+- fastfetch config
