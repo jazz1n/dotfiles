@@ -16,7 +16,7 @@ Anyways, thanks for looking up my repo ;)
 
 ## 📸 CyberPunk Showcase
 
-| **Everything, Everything, All At Once!**                 | 
+| **Everything, Everywhere, All At Once!**                 | 
 | -------------------------------------------------------- |
 | ![x1](assets/cyberpunk-2.png)        |
 
