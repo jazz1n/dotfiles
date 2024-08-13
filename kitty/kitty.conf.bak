@@ -1,0 +1,18 @@
+font_family Fira Code
+font_size 12.0
+
+# background_opacity 0.9
+# include colors.conf
+
+### TO CHANGE THE THEME:
+# cd .config/kitty
+# rm theme.conf # remove previous symolink
+# ln -s ./kitty-themes/themes/theme-name.conf ~/.config/kitty/theme.conf # tip: choose and get the names of themes from this repo: https://github.com/dexpota/kitty-themes
+
+include ./theme.conf
+
+
+# BEGIN_KITTY_THEME
+# Catppuccin-Macchiato
+include current-theme.conf
+# END_KITTY_THEME
