@@ -118,7 +118,7 @@ Anyways, thanks for looking up my repo ;)
 
 ## 📝 Credits
 
-I have borrowed code from these rops and changed some or most of them to my liking:
+I have borrowed code from these repos and changed some or most of them to my liking:
 
 - **Spelljinxer** - readme doc! : [dotfiles](https://github.com/Spelljinxer/dotfiles).
 - **Morhetz** - waybar config: [gruvbox](https://github.com/morhetz/gruvbox).
