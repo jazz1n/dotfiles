@@ -1,0 +1,344 @@
+
+* {
+    font-size: 11px;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+
+window#waybar {
+    /* `otf-font-awesome` is required to be installed for icons */
+    font-family: FontAwesome, monospace;
+    /* background-color: rgba(255,255,255,0.1); */ /*half transparent bar*/
+    background-color: rgba(0,0,0,0);                /* invisible bar */
+    border: 2px rgba(255,255,255,0.1);
+    border-radius: 10px;
+    /*  color: #ebdbb2;*/
+    transition-property: background-color;
+    transition-duration: .5s;
+}
+
+window#waybar.hidden {
+    opacity: 0.2;
+}
+
+window#waybar.empty #window {
+    background-color: transparent;
+}
+
+/*
+ window#waybar.empty {
+ background-color: transparent;
+ }
+ window#waybar.solo {
+ background-color: green;
+ }
+ */
+
+/* margin: top  right bottom left */
+.modules-right {
+    margin: 3px 0px 2px 0;
+}
+.modules-center {
+    margin: 3px 5px 2px 5px;
+}
+.modules-left {
+    margin: 3px 0 2px 0px;
+}
+
+button {
+    /* Use box-shadow instead of border so the text isn't offset */
+    /* box-shadow: inset 0 -3px transparent; */
+    border: none;
+}
+
+/* https://github.com/Alexays/Waybar/wiki/FAQ#the-workspace-buttons-have-a-strange-hover-effect */
+/*
+ button:hover {
+ background: inherit;
+ box-shadow: inset 0 -3px #ebdbb2;
+ } */
+
+/* TIP: config order is important */
+#workspaces {
+/*     background-color: #32302F; */
+/*    background-color: #E8E8DF;*/
+    background-color: #0EDADF;
+    color: #500500;
+}
+
+#workspaces button {
+    padding: 0;
+    background-color: transparent;
+    color: #2C0300;
+/*     border-radius: 0; */
+}
+
+#workspaces button:first-child {
+/*     border-radius: 5px 0 0 5px; */
+}
+
+#workspaces button:last-child {
+/*     border-radius: 0 5px 5px 0; */
+}
+
+#workspaces button:hover {
+    background-color: #0BFF01;
+    /* color: #d79921; */
+    color: black;
+}
+
+#workspaces button.active {
+     /* gruvbox-yellow:*/
+    /* background-color: #d79921; */
+    background-color: yellow;
+    color: #282828;
+}
+
+#workspaces button.focused {
+    /* background-color: #665c54; */
+    /* box-shadow: inset 0 -3px #ffffff; */
+/*    background-color: #ff0000; Red background */
+/*     color: #ffffff;            White text */
+}
+
+#workspaces button.urgent {
+    /* gruvbox pink: */
+    /* background-color: #b16286; */
+    background-color: #fe00f6;
+}
+
+
+#idle_inhibitor,
+#cava,
+#scratchpad,
+#mode,
+#window,
+#clock,
+#battery,
+#backlight,
+#wireplumber,
+#tray,
+#mpris,
+#cpu,
+#memory,
+#temperature,
+#load,
+#bluetooth,
+#language,
+#network,
+#custom-poweroff,
+#custom-persiandate {
+    /* padding: top&bot right&left*/
+    padding: 0 8px;
+/*     background-color: #32302F; */
+/*     background-color: #E8E8DF; */
+    background-color: #0EDADF;
+/*     color: #ebdbb2; */
+    color: #500500;
+}
+
+/*#language {
+border-radius: 20px;
+}*/
+
+#backlight-slider highlight  {
+    padding: 0 8px;
+    background-color: #282828;
+    color: #ebdbb2;
+}
+
+#mode {
+    background-color: #689d6a;
+    color: #282828;
+    box-shadow: inset 0 -3px #ffffff;
+}
+
+/* If workspaces is the leftmost module, omit left margin */
+.modules-left > widget:first-child > #workspaces {
+    /* margin: top&bot right&left*/
+    margin-left: 0;
+}
+
+/* If workspaces is the rightmost module, omit right margin */
+.modules-right > widget:last-child > #workspaces {
+    margin-right: 0;
+}
+
+#cava {
+    /* padding: top&bot right&left*/
+    padding: 0 3px;
+}
+
+#battery.charging, #battery.plugged {
+    /* gruvbox green */
+    /* background-color: #98971a; */
+    background-color: #0BFF01;
+    /* color: #282828; */
+    color: #500500;
+
+}
+
+@keyframes blink {
+    to {
+        background-color: transparent;
+        color: #ebdbb2;
+    }
+}
+
+/* Using steps() instead of linear as a timing function to limit cpu usage */
+#battery.critical:not(.charging) {
+    /* background-color: #cc241d; */
+    background-color: red;
+    /* color: #ebdbb2; */
+    color: black;
+    animation-name: blink;
+    animation-duration: 0.5s;
+    animation-timing-function: steps(12);
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+label:focus {
+    background-color: #000000;
+}
+
+#wireplumber.muted {
+    /* background-color: #CC241D; */
+    background-color: red;
+}
+
+/* #tray > .passive {
+    -gtk-icon-effect: dim;
+} */
+
+#tray > .needs-attention {
+    -gtk-icon-effect: highlight;
+}
+
+#mpris.playing {
+    /* gruvbox blue */
+    /* background-color: #579193;  */
+    background-color: #011EFE;
+    /* color: #282828; */
+    color: #ebdbb2;
+}
+
+#tray menu {
+    font-family: sans-serif;
+}
+
+#scratchpad.empty {
+    background: transparent;
+}
+
+#network.disconnected {
+    /* background: #CC241D; */
+    background-color: red;
+}
+
+#temperature.critical {
+    /* background-color: #cc241d; */
+    background-color: red;
+    /* color: #ebdbb2; */
+    color: #000000;
+    animation-name: blink;
+    animation-duration: 0.5s;
+    animation-timing-function: steps(12);
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+
+*.bar2 {
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+window.bar2#waybar {
+    /* `otf-font-awesome` is required to be installed for icons */
+    font-family: FontAwesome, monospace;
+    background-color: rgba(255,255,255,0.1); /* half transparent bar */
+    /* background-color: rgba(14, 218, 223, 1); */
+    border: 20px rgba(255,255,255,0.1);
+    border-radius: 10px;
+    /*  color: #ebdbb2;*/
+    transition-property: background-color;
+    transition-duration: .5s;
+    /* margin: top  right bottom left */
+    padding: 0px;
+    margin: 10px;
+    font-size: 20px;
+
+    }
+
+    .modules-right.bar2 {
+        margin: 10px;
+        padding: 10px;
+    }
+    
+    /* .modules-center.bar2 {
+        margin: 10px;
+        padding: 0;
+    } */
+
+    .modules-left.bar2 {
+        margin: 20px;
+        padding: 10px;
+    }
+
+/* If workspaces is the leftmost module, omit left margin */
+.modules-left.bar2 > widget:first-child > #workspaces {
+    /* margin: top  right bottom left */
+    margin: 20px;
+}
+
+/* If workspaces is the rightmost module, omit right margin */
+.modules-right.bar2 > widget:last-child > #workspaces {
+    margin: 20px;
+}
+
+    .bar2#workspaces {
+        /*     background-color: #32302F; */
+        /*    background-color: #E8E8DF;*/
+            background-color: #0EDADF;
+            color: #500500;
+            margin: 20px;
+            padding: 20px;
+        }
+
+
+.bar2#idle_inhibitor,
+.bar2#cava,
+.bar2#scratchpad,
+.bar2#mode,
+.bar2#window,
+.bar2#clock,
+.bar2#battery,
+.bar2#backlight,
+.bar2#wireplumber,
+.bar2#tray,
+.bar2#mpris,
+.bar2#cpu,
+.bar2#memory,
+.bar2#temperature,
+.bar2#load,
+.bar2#bluetooth,
+.bar2#language,
+.bar2#network,
+.bar2#custom-poweroff {
+    /* padding: top&bot right&left*/
+    margin: 20px;
+    padding: 0 5px;
+    border-width: 5px;
+/*     background-color: #32302F; */
+/*     background-color: #E8E8DF; */
+    background-color: #0EDADF;
+/*     color: #ebdbb2; */
+    color: #500500;
+    
+}
+
+
+
