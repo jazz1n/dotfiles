@@ -115,6 +115,9 @@ Anyways, thanks for looking up my repo ;)
 - [ ] zathura
 - [ ] ranger
 - [ ] emacs
+- [ ] hyprcursor
+- [ ] kvantum theme
+- [ ] icons theme
 
 ## 📝 Credits
 
