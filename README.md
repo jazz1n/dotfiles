@@ -1,9 +1,3 @@
-<p align="center">
-  <img src="assets/bladerunnerss.png" alt="perfect-ss" style="width: 100%;">
-</p>
-
-> 01:01:01; Now if that's not a perfect screenshot I don't know what is :D
-
 #### [in construction 🛠️.]
 
 ## 🌌 Overview
@@ -18,6 +12,9 @@ Anyways, thanks for looking up my repo ;)
 | **Everything, Everywhere, All At Once!**                 | 
 | -------------------------------------------------------- |
 | ![x1](assets/cyberpunk-2.png)        |
+
+<details>
+  <summary>Click to view all </summary>
 
 | **Fuzzel**                 | 
 | -------------------------------------------------------- |
@@ -39,11 +36,16 @@ Anyways, thanks for looking up my repo ;)
 | -------------------------------------------------------- |
 | ![x6](assets/x6.png)        |
 
+</details>
+
 
 ## 📸 Gruvbox Showcase
 |  **Fuzzel**                                              | 
 | -------------------------------------------------------- |
 | ![g1](assets/image-3.png)        |
+
+<details>
+  <summary>Click to view all </summary>
 
 | **Neofetch**                                             |
 | -------------------------------------------------------- |
@@ -57,7 +59,7 @@ Anyways, thanks for looking up my repo ;)
 | -------------------------------------------------------- |
 | ![](assets/gruvbox-1.png)                                |
 
-
+</details>
 
 ## ⚙️ Programs
 | Component         | Program    |
