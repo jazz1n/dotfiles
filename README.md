@@ -40,10 +40,6 @@ Anyways, thanks for looking up my repo ;)
 | ![x6](assets/x6.png)        |
 
 
-  **Wallpaper :D**                                              | 
-| -------------------------------------------------------- |
-| ![x2](assets/cyberpunk-1.png)        |
-
 ## 📸 Gruvbox Showcase
 |  **Fuzzel**                                              | 
 | -------------------------------------------------------- |
